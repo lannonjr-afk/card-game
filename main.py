@@ -46,7 +46,6 @@ def draw_card():
         card_drawn = draw_pile.pop()
         hand.append(card_drawn)
 
-# Test the function
 draw_card()
 
 print("--- YOUR HAND ---")
