@@ -1,5 +1,5 @@
 import random
-#a
+
 starter_deck = [
     {"name": "Strike", "cost": 1, "type": "attack", "value": 6},
     {"name": "Strike", "cost": 1, "type": "attack", "value": 6},
@@ -29,7 +29,7 @@ draw_pile = list(starter_deck)
 random.shuffle(draw_pile)
 
 hand = []
-discard_pile = []  # Discard pile initialized empty
+discard_pile = []  
 
 def draw_card():
     for i in range(5):
@@ -50,4 +50,4 @@ draw_card()
 
 print("--- YOUR HAND ---")
 for idx, card in enumerate(hand, 1):
-    print(f"{idx} (Cost: {card['cost']}) - {card['type'].capitalize()}: {card['value']}")
+    print(f"{idx} (Cost: {card['cost']}) - {card['name'].capitalize()}: {card['value']}")
